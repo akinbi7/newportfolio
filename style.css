@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    max-sheight: 100vh;
+    width: 100%;
+    background: #0c1022;
+}
+
+
+
+body{
+    position:relative
+}
+.overlay,.sideMenu{
+    position:fixed;bottom:0
+}
+
+.overlay{
+    top:0;left:-100%;
+    right:100%;
+    margin:auto;
+    z-index:998;
+    transition:all ease 20ms
+}
+
+.sideMenu,.sidebarNavigation{
+    z-index:999;margin-bottom:0
+}
+
+.overlay.open{
+    left:0;right:0
+}
+
+.sidebarNavigation .left-navbar-toggle{
+    float:left;margin-right:0;
+    margin-left:15px;
+.
+}
+
+.sideMenu{
+    left:-100%;top:52px;transition:all ease-in-out .4s;overflow:hidden;width:100%;max-width:50%
+}
+
+.sideMenu.open{left:0;display:block;overflow-y:auto
+}
+
+.sideMenu ul{margin:0
+}
+
+#header-color{
+    background: #0c1022;
+    border: none;
+}
+
+#logo{
+    font-family: "IM Fell English SC", serif;
+    font-weight: 900;
+    font-size: 30px;
+    background: linear-gradient(45deg, #f06, #3cf);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+     background-size: 300% 300%;
+    animation: color 12s ease-in-out infinite;
+}
+
+#text-color a{
+    color: white;
+    font-weight: 400;
+    transition: all .55s ease-in-out;
+
+}
+
+#text-color a:hover{
+      background: linear-gradient(45deg, #f06, #3cf);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-position: 300% 300%;
+}
+
+.active a{
+    background: linear-gradient(45deg, #f06, #3cf);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-position: 300%;
+}
+
+@keyframes color {
+    0%{
+        background-position: 0 50%;
+    }
+
+    50%{
+        background-position: 100% 50%;
+    }
+
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+
+.navbar-default{
+    background: black;
+}
+
+#btn-profile{
+    width: 100%;
+    height: 50px;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #f06, #3cf);
+    border: none;
+    background-size: 300%;
+}
+
+#btn-profile:hover{
+    border: 1px solid #f06;
+}
+
+#about-me{
+    background: transparent;
+    border: none;
+}
+
+#about-me h1{
+    font-weight: 900;
+    font-size: 40px;
+    color: white;
+}
+
+#about-me h2{
+    font-weight: 700;
+    font-size: 25px;
+    color: white;
+}
+
+#about-me p{
+    color: white;
+    margin-top: 5px;
+    font-style: italic;
+    max-width: 350px;
+    line-height: 25px;
+}
+
+
+#about-me img{
+    width: 20px;
+    height: 20px;
+}
+
+#btn{
+     width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #f06, #3cf);
+    border: none;
+    background-size: 100%;
+    color: white;
+    margin-top: 10px;
+}
+
+.image img{
+    height: 400px;
+    border-radius: 50%;
+}
